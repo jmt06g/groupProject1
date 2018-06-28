@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Simple Map</title>
+
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <script src="https://api.23andme.com/res/js/ttam-0.3.js"></script>
+    <div id="wrapper"></div>
+
+    <script>
+        window.onload = function () {
+            var ttam = TTAM('be48421d7efb7a5ec5f655edc56e6f97');
+            ttam.connectButton('wrapper', ["basic", "rs1234"]);
+        };
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            var results = response.data;
+        }) 
+    </script>
+</body>
+
+</html>
