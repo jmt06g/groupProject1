@@ -28,20 +28,11 @@ function createButton() {
         "AIzaSyD3Zg5J4ZdXMk4EQR45MZNCy6SWjwZEVXc";
 
   
-      $.ajax({
-        url: queryURL,
-        method: "GET"
-      }).then(function(response) {
-        var results = response.data;
-      
-    })
-
     $.ajax({
-      dataType: "json",
+      method: "GET",
+      dataType: "jsonp",
       url: "https://jobs.github.com/positions.json?description=python&location=new+york",
-      data: "type",
-      success: function()
-    {}})
-  })
+    }).then(function(response){
+      console.log(response)
+    })})
 
-    console.log();
