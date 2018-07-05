@@ -33,12 +33,15 @@ function createButton() {
         method: "GET"
       }).then(function(response) {
         var results = response.data;
-      })
+      
     })
 
     $.ajax({
       dataType: "json",
-      url: url,
-      data: data,
-      success: success
-    });
+      url: "https://jobs.github.com/positions.json?description=python&location=new+york",
+      data: "type",
+      success: function()
+    {}})
+  })
+
+    console.log();
