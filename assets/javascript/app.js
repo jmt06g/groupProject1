@@ -21,27 +21,15 @@ function createButton() {
 
 
     $("#jobButton").on("click", function() {
-      var job = $(this).attr("data-jobs");
-      var queryURL =
-        "https://maps.googleapis.com/maps/api/js?key=" +
-        job +
-        "AIzaSyD3Zg5J4ZdXMk4EQR45MZNCy6SWjwZEVXc";
+        var data = []
+        $.ajax({
+                method: 'GET',
+                dataType: 'jsonp',
+                url: 'https://jobs.github.com/positions.json?description=python',
+              }).then(function(response){
+                  data = response
+                  console.log(data)
+          })
+        console.log(data[0])})
+     
 
-  
-      $.ajax({
-        url: queryURL,
-        method: "GET"
-      }).then(function(response) {
-        var results = response.data;
-      
-    })
-
-    $.ajax({
-      dataType: "json",
-      url: "https://jobs.github.com/positions.json?description=python&location=new+york",
-      data: "type",
-      success: function()
-    {}})
-  })
-
-    console.log();
