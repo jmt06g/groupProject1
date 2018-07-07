@@ -10,9 +10,8 @@
 </head>
 <body>
   <div class="container" id="wrapper"> 
-      <!-- <h1>FIND CODING JOBS!</h1> -->
     <div id ="formContainer" class="container col-sm-3">
-      <form>
+      <form id="jobSearch">
         <div class="form-group justify-content-center">
           <label for="searchQuery">Github Jobs Search!</label>
           <input type="text" class="form-control" id="searchQuery" aria-describedby="emailHelp" placeholder="Python, ruby, javascript...">
@@ -25,12 +24,12 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Maybe put maps option here?</label>
         </div>
-        <button type="submit" id="searchSubmitButton" class="btn btn-primary">Find Jobs</button>
+        <button type="submit" id="jobButton" class="btn btn-primary">Find Jobs</button>
       </form>
     </div>
+    <div id="resultsContainer" />
   </div>
-  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script type="application/javascript" src="javascript/app.js"></script>
 </body>
 </html>
-
 

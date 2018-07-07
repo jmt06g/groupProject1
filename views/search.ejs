@@ -1,0 +1,3 @@
+<% jobsResult.map(job => { %>
+  <p><%= job.description.replace(/<\/?.*>/g, '') %></p>
+<% }) %>
