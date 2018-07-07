@@ -1,5 +1,3 @@
-<ul>
 <% jobsResult.map(job => { %>
-  <li><%= job.title.replace(/<\/?.*>/g, '') %> <a href="<%= job.url %>">Link</a></li>
+  <div><%= job.title.replace(/<\/?.*>/g, '') %> <a href="<%= job.url %>">Link</a></div>
 <% }) %>
-</ul>

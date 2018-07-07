@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  text-align: center;
+  padding-top: 82px;
+  
+}
+
+
+.font {
+color: rgb(102, 145, 202);
+font-size: 20px;
+}
+.mapoption {
+  color: lightslategray;
+font-size: 17px;
+}
+
+.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+  z-index: -5;
+  transform: translate(-50%, -50%);
+  background-image: url('./images/background.jpg');
+}
+
+.display-3 {
+  font-size: 35px; 
+  color: powderblue; 
+}
+
+#resultsContainer {
+color: white;
+}
